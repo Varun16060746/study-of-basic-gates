@@ -1,5 +1,7 @@
 ### study-of-basic-gates
+ 
 
+ 
 **AIM:** 
 
 To study and verify the truth table of logic gates in Quartus II using Verilog programming.
@@ -63,33 +65,46 @@ Y= A⊕B
 
 
 **PROGRAM**
+```
+module unit11(a,b,c1,c2,c3,c4,c5,c6,c7);
+input a,b;
+output c1,c2,c3,c4,c5,c6,c7;
+assign c1=a&b;
+assign c2=a|b;
+assign c3=~a;
+assign c4=~c1;
+assign c5=~c2;
+assign c6=a^b;
+assign c7=~(a^b);
+endmodule
+
+```
 
 Program for logic gates and verify its truth table in quartus using Verilog programming
-```
-assign c[0]= a & b;
-assign c[1]= a | b;
-assign c[2]= ~(a & b);
-assign c[3]= ~(a | b);
-assign c[4]= a ^ b;
-assign c[5]= ~(a ^ b);
-assign c[6]= ~ a;
-endmodule
-```
+
  Developed by: Varun A
+
  
- RegisterNumber: 212224050057
+ RegisterNumber:212224050057 
+
  
 **Logic symbol & Truthtable**
+![image](https://github.com/user-attachments/assets/a2557ed1-7071-49f8-9aa3-e79ef413ca8b)
+
+
+
 
 **RTL realization Output:** 
+![Screenshot 2025-03-11 111113](https://github.com/user-attachments/assets/d3c93e6e-6922-498b-a23c-ec3e78910e15)
 
-<img width="1920" height="1080" alt="Screenshot (15)" src="https://github.com/user-attachments/assets/c57edc2d-a795-4e84-80e3-6b103748b7b0" />
 
-<img width="1920" height="1080" alt="Screenshot (17)" src="https://github.com/user-attachments/assets/44d64f39-31b2-4b2c-86cc-7bd0bdbf2632" />
 
-**
+**RTL**
+![Screenshot 2025-03-11 113105](https://github.com/user-attachments/assets/9546528b-ebaa-4915-9ae5-7121101e977b)
 
 
 **Result:**
 
-Thus the basic logic gates are studied and the truth tables are verified.
+
+    Studied and verified the truth table of logic gates in Quartus II using Verilog programming successfully
+
